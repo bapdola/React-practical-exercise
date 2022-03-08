@@ -5,7 +5,7 @@ const Footer = memo((props) => {
     return (
         <footer className="footer">
             <span className="todo-count">
-                <span>{totalTodo == 1 ? `Have 1 item` : totalTodo != 1 ? `Have ${totalTodo} items` : 'No job right now'}</span> 
+                <span>{totalTodo == 1 ? `Have 1 item` : totalTodo > 1 ? `Have ${totalTodo} items` : 'No job right now'}</span> 
             </span>
             <ul className="filters">
                 <li>
